@@ -1,0 +1,36 @@
+//JSON = string
+
+JSON to JavaScript
+
+'{"greeting":"hello"}'
+
+1.
+const jsonStr = '{"greeting":"hello"}'
+
+/*2.
+JSON.parse(jsonStr)  //out: {greeting: 'hello'}  */
+
+3.
+const aPlainObj = JSON.parse(jsonStr)
+
+4.Done
+aPlainObj.greeting = 'hi'
+
+//inspect
+aPlainObj //out: {greeting: 'hi'}
+
+
+
+REGULAR OBJECT to JSON 
+
+const data={
+	firstName:"Jhon",
+	lastName:"Doe",
+	greeting:"Hello",
+}
+
+1.Done
+JSON.stringify(data)
+//out:
+//'{"firstName":"John","lastName":"Doe","greeting":"Hello"}'
+
