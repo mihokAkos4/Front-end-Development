@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light grey background */
+  color: #333; /* Dark grey text */
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #333 0%, #555 100%); /* Gradient dark grey */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header img {
+  height: 60px; /* Adjust based on your logo size */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)); /* Logo shadow */
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Responsive navigation */
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: #ffd700; /* Yellow */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #fff; /* White on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Hero Section */
+.hero {
+  background: url('pics/resturant.jpg') no-repeat center center/cover; /* Hero image */
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #ffd700; /* Yellow */
+  color: #333;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e6c200; /* Darker yellow on hover */
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.about article {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about img {
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* Highlights Section */
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+.highlights article {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlights article:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.highlights img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.highlights h2 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.highlights p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+  background: linear-gradient(135deg, #333 0%, #555 100%); /* Gradient dark grey */
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+footer img {
+  height: 50px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+footer div {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about article {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about img {
+      width: 100%;
+  }
+
+  .highlights {
+      flex-direction: column;
+      align-items: center;
+  }
+}
