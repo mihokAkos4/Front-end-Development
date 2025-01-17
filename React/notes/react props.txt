@@ -1,0 +1,41 @@
+JS object
+ const fruit = {type:"Apple", quantity:500, color:"green"};
+ 
+ conso;e.log(fruit.type) //.type .quantity access properties
+ 
+ 
+ 
+
+React props:
+	-dynamic
+	-like js objects
+	-parent component ---> child component
+	-pass data between components
+	-arguments are passed like HTML attribute
+	-keyword: props
+	-NEVER modify own props
+	
+	
+	
+index.js:
+
+import Ract from 'react';
+import ReactDOM from 'react-dom/client';
+
+import App from './App';
+
+ReactDOM.createRoot(
+	document.querySelector('#root')
+).render(<App title="Welcome"  />) //value you want to pass to App.js
+
+App.js:
+
+import React from 'react';
+// add "props" in function declaration ()
+export function App(props) {
+	return (
+		<h1>{props.title}</h1>	//access object's properties {props.title}
+		);
+	);
+
+

@@ -1,0 +1,31 @@
+1.
+<img
+	height={200}
+	src={rooftops}
+	alt="An image."
+/>
+
+
+
+
+2.
+<img
+	height={200}
+	src={require("./assets/images/picture.jpg")}
+	alt="An image."
+/>
+
+
+
+
+3.
+(inside function)
+const randomImageUrl = "https://picsum.photos/400/picture.jpg"
+(inside function)
+
+
+
+<img
+	src={randomImageUrl}
+	height={200}
+/>

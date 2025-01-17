@@ -1,0 +1,63 @@
+The app takes the client computer’s current datetime,
+and based on the data, displays one of two messages on the screen:
+
+	For workdays, the message is: “Get it done” 
+
+	For weekends, the message is: “Get some rest” 
+	
+	
+function CurrentMessage() {
+    const day = new Date().getDay();
+    if (day >= 1 && day <= 5) {
+        return <Workdays />
+    }
+    return <Weekends />
+}
+
+
+
+Conditional rendering with the help of element variables:
+
+function CurrentMessage({day}) {
+    const weekday = (day >= 1 && day <= 5);
+    const weekend = (day >= 6 && day <= 7);
+    let message;
+
+    if (weekday) {
+        message = <Workdays />
+    } else if (weekend) {
+        message = <Weekends />
+    } else {
+        message = <ErrorComponent />
+    }
+
+    return (
+        <div>
+            {message}
+        </div>
+    )
+}
+
+
+
+
+
+
+Conditional rendering using the logical AND operator:
+
+function LogicalAndExample() {
+    const val = prompt('Anything but a 0')
+
+    return (
+        <div>
+            <h1>Please don't type in a zero</h1>
+            {val &&
+                <h2>Yay, no 0 was typed in!</h2>
+            }
+        </div>
+    )
+}
+
+In other words, if a prop gets evaluated to true,
+using the && operator,
+you can render whatever JSX elements you want to the right of the && operator.

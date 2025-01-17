@@ -1,0 +1,28 @@
+console: true && 5
+out: 5
+
+
+
+
+
+
+
+
+ 	< div > {
+test && < h1 > Hello < /h1>} World</div >
+
+=Hello World
+
+
+
+
+
+
+
+
+
+{
+   morning ? < h2 > Breakfast time! < /h2> : <h2>Lunch time!</h2 >
+}
+
+=Lunch time!
