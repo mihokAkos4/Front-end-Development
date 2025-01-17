@@ -7,6 +7,16 @@ toUpperCase()
 toLowerCase() 
 
 
+letters.match(/a/);	//tells index where it was found 
+					in the variable
+
+					//"null" if absent
+
+
+console.log("jane smith"); 		//out:	Jane smith
+
+										undefined
+
 
 
 "Wo".concat("rl").concat("d"); // 'World'
