@@ -1,0 +1,98 @@
+pure function: returns 
+function EstabilishedYear(props) {
+	return <h1>Estabilished year: {props.year}</h1>
+}
+function App(){
+	return <EstabilishedYear year={2003} />		//till value is 2003 
+}												//output will remain unchaged when render from App component
+export default App;								//no side effects		
+
+
+
+
+impure function : //invoke console.log,fetch,geolocation
+function ShoppingCart(props) {
+	const total = props.count * props.price;
+	console.log(total);						// because it makes a call to browser API
+	return <h1>Total: {total}</h1>
+}
+
+export default function App() {
+	return (
+		<ShoppingCart items={5} pricePerItem={10} />
+	)
+}
+
+
+
+How it's done purely:
+
+import {useEffect} from "react";   //useEffect
+
+function ShoppingCart(props) {
+	const total = props.count * props.price;
+	//2 callbacks
+	useEffect(function() {		//1.						
+		console.log(total);		//callback function			useEffect(()=>console.log(total),[];
+		}, [])		//2.array[]										//this but 1 line of code
+		
+		return <h1>Total: {total}</h1>
+	}
+	
+	
+	
+useEffect
+
+By default, if no second argument is provided to the useEffect function,
+the effect will run after every render.
+
+useEffect(() => { 
+   document.title = 'Little Lemon';
+ }); 
+
+
+will only be re-run if the version number changes between renders.
+
+useEffect(() => { 
+  document.title = `Little Lemon, v${version}`;
+}, [version]); // Only re-run the effect if version changes 
+
+
+Use multiple Effects to Separate Concerns
+
+function MenuPage(props) { 
+  const [data, setData] = useState([]); 
+
+  useEffect(() => { 
+    document.title = 'Little Lemon'; 
+  }, []); 
+
+  useEffect(() => { 
+    fetch(`https://littlelemon/menu/${id}`) 
+      .then(response => response.json()) 
+      .then(json => setData(json)); 
+  }, [props.id]); 
+
+  // ... 
+} 
+
+
+Effects with Cleanup
+
+function LittleLemonChat(props) { 
+  const [status, chatStatus] = useState('offline'); 
+
+  useEffect(() => { 
+    LemonChat.subscribeToMessages(props.chatId, () => setStatus('online')) 
+
+    return () => { 
+      setStatus('offline'); 
+      LemonChat.unsubscribeFromMessages(props.chatId); 
+    }; 
+  }, []); 
+
+  // ... 
+} 
+
+
+

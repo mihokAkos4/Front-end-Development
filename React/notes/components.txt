@@ -1,0 +1,23 @@
+const App = () => {
+  return(
+    <AppContext.Provider>
+      <ComponentA />
+    </AppContext.Provider>
+  );
+};
+
+const ComponentA = React.memo(() => <ComponentB />);
+const ComponentB = () => <ComponentC />;
+const ComponentC = () => null;
+
+
+If the App component re-rendered for whatever reason, what would be the sequence of component re-renders that would take place?
+
+-->When App re-renders, only App re-renders—none of its children (ComponentA, ComponentB, ComponentC)
+	 will re-render in this specific case.
+
+
+useMemo
+
+React hook that allows you to keep the same object reference in memory
+and prevent unnecessary re-renders if the object itself hasn’t changed any values
