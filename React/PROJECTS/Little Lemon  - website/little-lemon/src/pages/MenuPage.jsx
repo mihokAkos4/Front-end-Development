@@ -11,13 +11,13 @@ const MenuPage = () => {
         name: "Bruschetta",
         price: "$8.99",
         description: "Grilled bread, garlic, tomatoes, olive oil",
-        image: "/images/bruschetta.jpg"
+        image: "images/bruschetta.jpg"
       },
       {
         name: "Greek Salad",
         price: "$10.99",
         description: "Crispy lettuce, peppers, olives, feta cheese",
-        image: "/images/greek-salad.jpg"
+        image: "images/greek-salad.jpg"
       }
     ],
     mainCourses: [
@@ -25,13 +25,13 @@ const MenuPage = () => {
         name: "Grilled Salmon",
         price: "$18.99",
         description: "Fresh salmon, lemon butter sauce",
-        image: "/images/grilled-salmon.jpg"
+        image: "images/grilled-salmon.jpg"
       },
       {
         name: "Lemon Chicken",
         price: "$16.99",
         description: "Grilled chicken with lemon herb sauce",
-        image: "/images/lemon-chicken.jpg"
+        image: "images/lemon-chicken.jpg"
       }
     ],
     desserts: [
@@ -39,13 +39,13 @@ const MenuPage = () => {
         name: "Lemon Tart",
         price: "$7.99",
         description: "Classic lemon tart with meringue",
-        image: "/images/lemon-tart.jpg"
+        image: "images/lemon-tart.jpg"
       },
       {
         name: "Baklava",
         price: "$6.99",
         description: "Traditional Mediterranean pastry",
-        image: "/images/baklava.jpg"
+        image: "images/baklava.jpg"
       }
     ]
   };

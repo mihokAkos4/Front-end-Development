@@ -19,30 +19,30 @@ const AboutPage = () => {
             </p>
           </div>
           <div className="about-images">
-            <a href="/images/about1.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="images/about1.jpg" target="_blank" rel="noopener noreferrer">
               <img
-                src="/images/about1.jpg"
+                src="images/about1.jpg"
                 alt="Restaurant interior"
                 className="about-image"
               />
             </a>
-            <a href="/images/about2.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="images/about2.jpg" target="_blank" rel="noopener noreferrer">
               <img
-                src="/images/about2.jpg"
+                src="images/about2.jpg"
                 alt="Outdoor seating"
                 className="about-image"
               />
             </a>
-            <a href="/images/about3.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="images/about3.jpg" target="_blank" rel="noopener noreferrer">
               <img
-                src="/images/about3.jpg"
+                src="images/about3.jpg"
                 alt="Chef preparing food"
                 className="about-image"
               />
             </a>
-            <a href="/images/about4.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="images/about4.jpg" target="_blank" rel="noopener noreferrer">
               <img
-                src="/images/about4.jpg"
+                src="images/about4.jpg"
                 alt="Kitchen"
                 className="about-image"
               />

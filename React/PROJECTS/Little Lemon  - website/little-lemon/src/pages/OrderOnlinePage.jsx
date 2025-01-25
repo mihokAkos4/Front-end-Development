@@ -11,37 +11,37 @@ const OrderOnlinePage = () => {
       id: 1,
       name: "Bruschetta",
       price: 8.99,
-      image: "/images/bruschetta.jpg"
+      image: "images/bruschetta.jpg"
     },
     {
       id: 2,
       name: "Greek Salad",
       price: 10.99,
-      image: "/images/greek-salad.jpg"
+      image: "images/greek-salad.jpg"
     },
     {
       id: 3,
       name: "Grilled Salmon",
       price: 18.99,
-      image: "/images/grilled-salmon.jpg"
+      image: "images/grilled-salmon.jpg"
     },
     {
       id: 4,
       name: "Lemon Chicken",
       price: 16.99,
-      image: "/images/lemon-chicken.jpg"
+      image: "images/lemon-chicken.jpg"
     },
     {
       id: 5,
       name: "Lemon Tart",
       price: 7.99,
-      image: "/images/lemon-tart.jpg"
+      image: "images/lemon-tart.jpg"
     },
     {
       id: 6,
       name: "Baklava",
       price: 6.99,
-      image: "/images/baklava.jpg"
+      image: "images/baklava.jpg"
     }
   ];
 

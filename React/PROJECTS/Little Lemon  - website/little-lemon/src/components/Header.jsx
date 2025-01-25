@@ -16,7 +16,7 @@ const Header = ({ user }) => {
       <nav className="nav-container">
         <Link to="/" className="logo-link">
           <img
-            src="/images/logo.jpg"
+            src="images/logo.jpg"
             alt="Little Lemon Logo"
             className="logo"
           />

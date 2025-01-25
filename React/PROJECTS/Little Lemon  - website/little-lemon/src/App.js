@@ -5,7 +5,7 @@ import './App.css';
 
 import Header from './components/Header';
 import Home from './components/Home';
-import Footer from './components/Footer';
+
 
 
 import AboutPage from './pages/AboutPage';
@@ -39,7 +39,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/little-lemon">
       <div className="app">
         <Header />
         <Routes>

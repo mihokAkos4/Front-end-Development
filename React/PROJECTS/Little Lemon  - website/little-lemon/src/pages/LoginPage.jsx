@@ -41,7 +41,7 @@ const LoginPage = () => {
   return (
     <div className="login-page">
       <div className="login-container">
-        <img className="icon" src="/images/favicon/icon.png"></img>
+        <img className="icon" src="images/favicon/icon.png"></img>
         <h1>Welcome Back</h1>
         <p>Sign in to your account</p>
         {error && <p className="error-message">{error}</p>}
