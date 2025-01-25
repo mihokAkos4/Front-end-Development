@@ -1,0 +1,1 @@
+The Little Lemon restaurant webpage is a modern, responsive React app powered by Firebase for seamless backend functionality.
